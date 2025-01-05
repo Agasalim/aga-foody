@@ -1,7 +1,6 @@
 #bg{background-color: #F8F9FA;}
-/* * a{text-decoration: none;} */
 header{
-    background:linear-gradient(rgba(0, 0, 0, 0.26),rgba(0, 0, 0, 0.281)), url(../Foody/Source/foody_main_img.webp)center/cover;
+    background:linear-gradient(rgba(0, 0, 0, 0.26),rgba(0, 0, 0, 0.281)), url(Source/foody_main_img.webp)center/cover;
     clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
     height: 100vh;
 }
@@ -182,6 +181,10 @@ header{
     clip-path: polygon(0 0, 100% 0%, 100% 78%, 0% 100%);
     padding: 150px 0;
 }
+.eating{
+    width: 100%;
+    margin-bottom: 30px;
+}
 .icon_box{
     width: 80px;
     height: 80px;
@@ -190,10 +193,6 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.eating{
-    max-width: 100%;
-    margin-bottom: 30px;
 }
 .eating i{
     font-size: 30px;
@@ -213,15 +212,14 @@ header{
 }
 
 @media only screen and (min-width:768px) {
-    .eating{
-        width: 250px;
-    }
+    .eating{width: 50%;}
     .dinner{
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
     }
 }
+@media only screen and (min-width:991px) {.eating{width: 25%;}}
 
 
 /**<---SECTION HEAD--->*/
